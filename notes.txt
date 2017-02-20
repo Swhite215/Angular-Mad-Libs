@@ -1,0 +1,10 @@
+What is Angular?
+Angular is a JS framework that is used for making web applications. It runs on Javascript and HTML and is CSS agnostic.
+
+Why use Angular?
+Angular's data can be injected, modified, and removed without ever requiring a page refresh. 
+
+What is Angular structure?
+1. The template - Like a static HTML webpage but allows injection of additional syntax for customized user experiences.
+2. The scope - represents the model of our application
+3. The controller - a function that takes an empty scope object and adds it to the fields and functions for later viewing.

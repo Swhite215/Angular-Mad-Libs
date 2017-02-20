@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Practice</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+  </head>
+
+  <body ng-app>
+
+    <div class="container">
+      <form class="" action="index.html" method="post">
+        <h2 id="formTitle">Mad Libs Input</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" value="" ng-model="name"><br>
+        <label for="adjectiveOne">Adjective:</label><br>
+        <input type="text" name="adjectiveOne" value="" ng-model="adjectiveOne"><br>
+        <label for="adjectiveTwo">Adjective:</label><br>
+        <input type="text" name="adjectiveTwo" value="" ng-model="adjectiveTwo"><br>
+        <label for="adjectiveThree">Adjective:</label><br>
+        <input type="text" name="adjectiveThree" value="" ng-model="adjectiveThree"><br>
+        <label for="number">Number:</label><br>
+        <input type="number" name="number" value="" ng-model="number"><br>
+        <label for="adjectiveFour">Adjective:</label><br>
+        <input type="text" name="adjectiveFour" value="" ng-model="adjectiveFour"><br>
+        <label for="number">Lucky Number:</label><br>
+        <input type="number" name="lucky number" value="" ng-model="action"><br>
+        <label for="noun">Noun:</label><br>
+        <input type="text" name="noun" value="" ng-model="noun"><br>
+        <label for="nounTwo">Noun:</label><br>
+        <input type="text" name="nounTwo" value="" ng-model="nounTwo"><br>
+
+
+      </form>
+
+      <section id="storySection">
+
+        <h1 id="storyTitle">A Vi's Story</h1>
+
+        <h2 class="madSentence">This Vi was named {{name}}.</h2>
+
+        <h2 class="madSentence">{{name}} was known as a {{adjectiveOne}}, {{adjectiveTwo}}, and {{adjectiveThree}} Vi.</h2>
+
+        <h2 class="madSentence">One day, {{name}} encountered {{number+2}} {{adjectiveFour}} monsters! </h2>
+
+        <h2 class="madSentence">It is {{ action >= 0 }}! {{name}} is strong enough to vanquish these {{adjectiveFour}} monsters.</h2>
+
+        <h2 class="madSentence">{{name}} grabs a {{noun}} and with a flourish attacks!</h2>
+
+        <h2 class="madSentence">All {{number+2}} monsters pull out a {{nounTwo}} and grin menacingly. </h2>
+
+        <h2 class="madSentence">The {{noun}} and a monsters {{nounTwo}} make contact and a huge explosion occurs! </h2>
+
+        <h2 class="madSentence">As the dust clears, only {{name}} is standing. </h2>
+
+        <h2 class="madSentence">The End!</h2>
+
+        <h2 id="credits">Credits:<h2>
+
+          <div class="credits" ng-init="storyStaff=['Story by Spencer', 'Lack of Sound by Spencer', 'Lack of Animation by Spencer']">
+            <ul id="creditList">
+              <li ng-repeat="staff in storyStaff">{{staff}}</li>
+            </ul>
+          </div>
+
+        <div class="assetsBox" ng-init="practiceImages=['images/Aqua Altered.png', 'images/Ignis Altered.png', 'images/Terra Altered.png']">
+          <h2 id="credits">Images NOT Used...</h2>
+            <img ng-repeat="image in practiceImages" class="practiceImage" ng-src= "{{image}}" alt="practice">
+        </div>
+
+
+
+
+      </section>
+
+      <footer id="footer"> White Designs &copy; 2017 </footer>
+    </div>
+
+  </body>
+</html>
